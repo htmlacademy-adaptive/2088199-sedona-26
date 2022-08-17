@@ -6,39 +6,34 @@
   <title>HTML Academy: Седона</title>
 </head>
 
-<body class="page__body">
+<body class="body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img src="images/header/main-logo.svg" width="185" height="96" alt="Логотип городка Седона">
-    </a>
-    <nav class="main-nav">
-      <button class="main-header__menu-button" type="button">
+    <div class="main-header__logo">
+      <a href="../source/index.html">
+        <img src="" width="" height="" alt="">
+      </a>
+    </div>
+    <div class="main-header__menu-button">
+      <button class="burger-button" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="site-list__item">
-            <a>
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="#">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </div>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <span class="main-nav__cross-button"></span>
+          <a class="main-nav__link" href="#">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-menu__link--active">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">
@@ -142,8 +137,60 @@
       </fieldset>
       <fieldset class="feedback-form__contact-info feedback-form__contact-info--review">
         <legend class="feedback-form__title feedback-form__title--review">Опишите свои эмоции:</legend>
-        <textarea class="feedback-form__field-input feedback-form__field-input--textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+        <textarea class="feedback-form__field-input feedback-form__field-input--textarea"
+          placeholder="Опишите свои эмоции:"></textarea>
       </fieldset>
+      <button class="button feedback-form__button" type="submit">
+        <span class="button__text">Отправить отзыв</span>
+      </button>
+      <p class="feedback-form__notice">* — обязательные поля</p>
     </form>
   </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__social social">
+        <b class="social__tag">#VISITSEDONA</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в
+              Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в
+              Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+  <article class="popup popup--failure js-popup-failure">
+    <section class="popup__section popup__section--failure">
+      <h2 class="popup__title popup__title--failure">Что-то пошло не так!</h2>
+      <p class="popup__text popup__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их
+        заполнить</p>
+    </section>
+    <button class="button popup__button">
+      <span class="button__text">ок</span>
+    </button>
+  </article>
+  <article class="popup popup--success js-popup-success">
+    <section class="popup__section popup__section--success">
+      <h2 class="popup__title popup__title--success">Ваш отзыв отправлен!</h2>
+      <p class="popup__text popup__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
+        время мы опубликуем его на сайте.</p>
+    </section>
+    <div class="popup__button-container">
+      <button class="button popup__button popup__button--success">
+        <span class="button__text">Закрыть окно</span>
+      </button>
+    </div>
+  </article>
 </body>
