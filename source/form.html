@@ -39,13 +39,14 @@
   <main class="main-container">
     <section class="main">
       <div class="main__wrapper">
-        <img class="main__wrapper-image" src="img/welcome-short-phone.svg" width="229" height="39" alt="Добро пожалывать в Седону.">
+        <img class="main__wrapper-image" src="img/welcome-short-phone.svg" width="229" height="39"
+          alt="Добро пожалывать в Седону.">
       </div>
       <h2 class="main__title">Оставьте свой отзыв</h2>
       <p class="main__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
     </section>
-    <form action="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="feedback-form__contact-info feedback-form__contact-info--full-name">
         <legend class="feedback-form__title feedback-form__title--full-name">Представьтесь:</legend>
         <label class="feedback-form__field-label">Имя*:
@@ -177,7 +178,7 @@
       </div>
     </div>
   </footer>
-  <article class="popup popup--failure js-popup-failure">
+  <div class="popup popup--failure js-popup-failure">
     <section class="popup__section popup__section--failure">
       <h2 class="popup__title popup__title--failure">Что-то пошло не так!</h2>
       <p class="popup__text popup__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их
@@ -186,8 +187,8 @@
     <button class="button popup__button">
       <span class="button__text">ок</span>
     </button>
-  </article>
-  <article class="popup popup--success js-popup-success">
+  </div>
+  <div class="popup popup--success js-popup-success">
     <section class="popup__section popup__section--success">
       <h2 class="popup__title popup__title--success">Ваш отзыв отправлен!</h2>
       <p class="popup__text popup__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
@@ -198,5 +199,5 @@
         <span class="button__text">Закрыть окно</span>
       </button>
     </div>
-  </article>
+  </div>
 </body>
